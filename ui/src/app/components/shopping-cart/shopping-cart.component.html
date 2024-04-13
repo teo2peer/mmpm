@@ -1,5 +1,5 @@
 <p-button
-  label="Shopping Cart"
+  label="Manage selected packages" 
   icon="fa-solid fa-shopping-cart"
   styleClass="p-button-success ml-2"
   (click)="op.toggle($event)"
@@ -28,7 +28,7 @@
     <p-divider></p-divider>
 
     <div class="confirm-button">
-      <p-button label="Checkout" [disabled]="!(selectedPackages && selectedPackages.length > 0)" (click)="onCheckout()" icon="fa-solid fa-check"></p-button>
+      <p-button label="Apply changes" [disabled]="!(selectedPackages && selectedPackages.length > 0)" (click)="onCheckout()" icon="fa-solid fa-check"></p-button>
     </div>
 
     <p-toolbar>
